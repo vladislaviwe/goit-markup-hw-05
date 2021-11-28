@@ -25,7 +25,7 @@
                 <nav class="header-navigation">
                     <ul class="header-list">
                         <li class="header-item">
-                            <a class="header-link" href="./index.html">Студия</a>
+                            <a class="header-link current" href="./index.html">Студия</a>
                         </li>
                         <li class="header-item">
                             <a class="header-link" href="./portfolio.html">Портфолио</a>
@@ -66,7 +66,7 @@
 
             <section class="hero">           
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button class="hero-btn" type="button">Заказать услугу</button>
+                    <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
             </section>
 
             <!-- Преимущества -->
@@ -125,9 +125,28 @@
                 <div class="container">
                     <h2 class="whatwedo-title">Чем мы занимаемся</h2>
                     <ul class="whatwedo-list">
-                        <li class="whatwedo-item"><img src="./images/whatwedo1.jpg" alt="Програмист набирает код" width="370" height="294"></li>
-                        <li class="whatwedo-item"><img src="./images/whatwedo2.jpg" alt="Дизайнер выбирает макет" width="370" height="294"></li>
-                        <li class="whatwedo-item"><img src="./images/whatwedo3.jpg" alt="Дизайнер выбирает цвет из палитры" width="370" height="294"></li>
+                        <li class="whatwedo-item">
+                            <div class="what-we-do-card">
+                                <img src="./images/whatwedo1.jpg" alt="Програмист набирает код" width="370" height="294">
+                                <div class="what-we-do-text">
+                                    <p>Десктопные приложения</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="whatwedo-item">
+                            <div class="what-we-do-card">
+                                <img src="./images/whatwedo2.jpg" alt="Програмист набирает код" width="370" height="294">
+                                <div class="what-we-do-text">
+                                    <p>Мобильные приложения</p>
+                                </div>
+                            </div>
+                        <li class="whatwedo-item">
+                            <div class="what-we-do-card">
+                                <img src="./images/whatwedo3.jpg" alt="Програмист набирает код" width="370" height="294">
+                                <div class="what-we-do-text">
+                                    <p>Дизайнерские решения</p>
+                                </div>
+                            </div>
                     </ul>
                 </div>
             </section>
@@ -343,6 +362,7 @@
                     </ul>
                 </div>
             </section>
+            </main>
 
             <!-- Футер -->
 
@@ -399,7 +419,16 @@
                     </div>
                 </div>
             </footer>
-        </main>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button type="button" class="modal-close" data-modal-close>
+                        <svg class="modal-close-icon" width="11" height="11">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <script src="./js/modal.js"></script>
     </body>
 </html>
         
